@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmq05wt10yp8u"]
+
+[ext_resource type="Script" uid="uid://clykb8q5t0i03" path="res://cannon.gd" id="1_23j6s"]
+[ext_resource type="Texture2D" uid="uid://dxag6toemjvmb" path="res://icon.svg" id="2_72ky0"]
+[ext_resource type="Script" uid="uid://kbg7aj7ggmx8" path="res://cannon_barrel.gd" id="3_72ky0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_odvvv"]
+size = Vector2(98, 98)
+
+[node name="Cannon" type="Area2D"]
+script = ExtResource("1_23j6s")
+
+[node name="CannonBarrel" type="Sprite2D" parent="."]
+position = Vector2(35, 0)
+scale = Vector2(0.46875, 0.234375)
+texture = ExtResource("2_72ky0")
+offset = Vector2(64, 0)
+script = ExtResource("3_72ky0")
+
+[node name="CannonBase" type="Sprite2D" parent="."]
+scale = Vector2(0.765625, 0.765625)
+texture = ExtResource("2_72ky0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_odvvv")
+
+[node name="ShootingTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(94, 0)
+
+[connection signal="timeout" from="ShootingTimer" to="." method="_on_shooting_timer_timeout"]

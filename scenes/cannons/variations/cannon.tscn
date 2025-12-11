@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://jjtcptoa4xkc"]
+
+[ext_resource type="PackedScene" uid="uid://bmq05wt10yp8u" path="res://scenes/cannons/base_cannon.tscn" id="1_go757"]
+[ext_resource type="PackedScene" uid="uid://c1y38ff6ehvt6" path="res://scenes/cannons/cannon_barrel.tscn" id="3_jlgif"]
+
+[node name="Cannon" instance=ExtResource("1_go757")]
+knockback_force = 100.0
+
+[node name="CannonBarrel" parent="BarrelGroup" index="0" instance=ExtResource("3_jlgif")]
+position = Vector2(-1.9073486e-06, -56)
+rotation = -1.5707964

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1y38ff6ehvt6"]
+
+[ext_resource type="Texture2D" uid="uid://rylg18d057el" path="res://sprites/basic_cannon_barrel.svg" id="1_f4m41"]
+[ext_resource type="Script" uid="uid://kbg7aj7ggmx8" path="res://scripts/cannon_barrel.gd" id="2_l8e0a"]
+
+[node name="CannonBarrel" type="Node2D"]
+script = ExtResource("2_l8e0a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1053, 0.1025)
+texture = ExtResource("1_f4m41")
+offset = Vector2(218, 0)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(56.000004, 0)
+scale = Vector2(0.1053, 0.09999999)
+gizmo_extents = 25.0
