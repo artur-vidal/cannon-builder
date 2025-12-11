@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8xx8f6n8ub7l"
-path="res://.godot/imported/basic_blue_cannon.svg-24f757f736a66989a604babdeb4221db.ctex"
+uid="uid://b0g6us3o6qjsy"
+path="res://.godot/imported/bullet.png-bf127d53460a0826f847c19a5a1ace6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/basic_blue_cannon.svg"
-dest_files=["res://.godot/imported/basic_blue_cannon.svg-24f757f736a66989a604babdeb4221db.ctex"]
+source_file="res://sprites/bullet.png"
+dest_files=["res://.godot/imported/bullet.png-bf127d53460a0826f847c19a5a1ace6c.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

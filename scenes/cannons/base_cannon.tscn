@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://bmq05wt10yp8u"]
 
-[ext_resource type="Script" uid="uid://clykb8q5t0i03" path="res://scripts/cannon.gd" id="1_23j6s"]
-[ext_resource type="Texture2D" uid="uid://c8xx8f6n8ub7l" path="res://sprites/basic_blue_cannon.svg" id="3_0a50a"]
-[ext_resource type="Script" uid="uid://d4f2tqomn5scp" path="res://scripts/barrel_group.gd" id="3_k2wpi"]
+[ext_resource type="Script" uid="uid://clykb8q5t0i03" path="res://scripts/Cannon.gd" id="1_23j6s"]
+[ext_resource type="Texture2D" uid="uid://0w5x3cx6yarx" path="res://sprites/cannon.png" id="3_0a50a"]
+[ext_resource type="Script" uid="uid://d4f2tqomn5scp" path="res://scripts/BarrelGroup.gd" id="3_k2wpi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_odvvv"]
-size = Vector2(104, 104)
+size = Vector2(64, 64)
 
 [node name="BaseCannon" type="Area2D" groups=["Cannons"]]
 script = ExtResource("1_23j6s")
@@ -14,7 +14,6 @@ script = ExtResource("1_23j6s")
 script = ExtResource("3_k2wpi")
 
 [node name="CannonSprite" type="Sprite2D" parent="."]
-scale = Vector2(0.22, 0.22)
 texture = ExtResource("3_0a50a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

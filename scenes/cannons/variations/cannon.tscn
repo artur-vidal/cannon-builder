@@ -4,8 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://c1y38ff6ehvt6" path="res://scenes/cannons/cannon_barrel.tscn" id="3_jlgif"]
 
 [node name="Cannon" instance=ExtResource("1_go757")]
-knockback_force = 100.0
 
 [node name="CannonBarrel" parent="BarrelGroup" index="0" instance=ExtResource("3_jlgif")]
-position = Vector2(-1.9073486e-06, -56)
+position = Vector2(0, -32)
 rotation = -1.5707964
+
+[node name="CannonBarrel2" parent="BarrelGroup" index="1" instance=ExtResource("3_jlgif")]
+position = Vector2(32, 0)

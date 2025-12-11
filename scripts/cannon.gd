@@ -1,7 +1,7 @@
 class_name BaseCannon
 extends Area2D
 
-@export var move_speed: float = 400.0
+@export var move_speed: float = 200.0
 @export var move_smoothness : float = 10.0
 @export var knockback_force: float = 0.0
 

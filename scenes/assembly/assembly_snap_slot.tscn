@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmqnk8x7wfl0w"]
+
+[ext_resource type="Script" uid="uid://8w25q5e014ar" path="res://scripts/AssemblySnapSlot.gd" id="1_2b65p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3icro"]
+bg_color = Color(0.16895923, 0.16895929, 0.16895914, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.106027566, 0.10602758, 0.10602748, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+corner_detail = 1
+expand_margin_left = 4.0
+expand_margin_top = 4.0
+expand_margin_right = 4.0
+expand_margin_bottom = 4.0
+shadow_offset = Vector2(4, 4)
+
+[node name="AssemblySnapSlot" type="Panel" groups=["snap_slots"]]
+z_index = -1
+offset_right = 32.0
+offset_bottom = 32.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3icro")
+script = ExtResource("1_2b65p")
+metadata/_custom_type_script = "uid://8w25q5e014ar"

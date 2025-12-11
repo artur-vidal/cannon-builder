@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://djjot315i8n5a"]
+
+[ext_resource type="PackedScene" uid="uid://bi24llmei28xu" path="res://scenes/assembly/assembly_item.tscn" id="1_kieiw"]
+[ext_resource type="PackedScene" uid="uid://cmqnk8x7wfl0w" path="res://scenes/assembly/assembly_snap_slot.tscn" id="2_4dr10"]
+
+[node name="AssemblyTest" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AssemblyItem" parent="." instance=ExtResource("1_kieiw")]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 116.0
+offset_right = 416.0
+offset_bottom = 180.0
+
+[node name="AssemblySnapSlot" parent="AssemblyItem" instance=ExtResource("2_4dr10")]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 69.0
+offset_right = 48.0
+offset_bottom = 101.0
+
+[node name="AssemblyItem2" parent="." instance=ExtResource("1_kieiw")]
+layout_mode = 0
+offset_left = 187.0
+offset_top = 141.0
+offset_right = 251.0
+offset_bottom = 205.0
+
+[node name="AssemblySnapSlot" parent="AssemblyItem2" instance=ExtResource("2_4dr10")]
+layout_mode = 0
+offset_left = 21.0
+offset_top = -33.0
+offset_right = 45.0
+offset_bottom = -9.0
+
+[node name="AssemblySnapSlot2" parent="AssemblyItem2" instance=ExtResource("2_4dr10")]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 15.0
+offset_right = 97.0
+offset_bottom = 39.0
+
+[node name="AssemblySnapSlot3" parent="AssemblyItem2" instance=ExtResource("2_4dr10")]
+layout_mode = 0
+offset_left = -31.0
+offset_top = 11.0
+offset_right = -7.0
+offset_bottom = 35.0
+
+[node name="AssemblyItem3" parent="." instance=ExtResource("1_kieiw")]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 188.0
+offset_right = 520.0
+offset_bottom = 252.0
